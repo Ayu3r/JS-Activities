@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS DOM Activity</title>
+</head>
+<body>
+<p>Input radius value and get the volume of a sphare.</p>
+
+<form>
+	<label for="radiusValue">Radius</label><br>
+	<input type="number" id = "radius"><br>
+	<label for="volume">Volume</label><br>
+	<input type="number" id="volume"><br>
+	<button type="button" onclick="calculateVolume()">Calculate</button>
+
+<script>
+function calculateVolume() {
+	const radius = document.getElementById("radius").value;
+	const volume = (4/3) * Math.PI * Math.pow(radius, 3);
+	
+	document.getElementById("volume").value = volume;
+	}
+</script>
+</body>
+</html>
+	
